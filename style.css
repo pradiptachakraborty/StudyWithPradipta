@@ -108,7 +108,7 @@ footer {
 /* Flying Card Style */
 .info-card {
     position: fixed;
-    top: -400px;
+    top: -500px;
     /* Start outside screen */
     left: 50%;
     transform: translateX(-50%);
@@ -127,6 +127,10 @@ footer {
     /* Fly down */
 }
 
+.mail{
+    color: blue;
+}
+
 .close-btn {
     position: absolute;
     right: 15px;
@@ -134,4 +138,24 @@ footer {
     cursor: pointer;
     font-size: 18px;
     color: red;
+}
+.finalprice{
+    font-size: 30px;
+}
+
+.cobtn{
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cobtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
