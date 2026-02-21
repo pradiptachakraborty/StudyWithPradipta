@@ -5,27 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudyWithPradipta</title>
   <link rel="shortcut icon" href="swp.png">
-  <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f5f3f3; color: #333; }
-    header { background: #470380; padding: 30px 20px; text-align: center; color: white; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin-top: 10px; font-size: 1.2rem; }
-    header img{ width: 10%; height: 100%;}
-    
-    .intro { text-align: center; padding: 0px 20px; }
-    .intro h2 { font-size: 2rem; margin-bottom: 10px; }
-    .intro p { font-size: 1rem; color: #555; max-width: 600px; margin: 0 auto; }
-
-    .subscribe-button { display: inline-block; margin-top: 20px; padding: 12px 25px; background: #FF0000; color: white; text-decoration: none; border-radius: 25px; font-size: 1rem; }
-    
-    .videos { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 20px; }
-    .video { background: rgb(142, 227, 241); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: pointer;}
-    .video:hover { transform: scale(1.03);box-shadow: 0 8px 16px rgba(0,0,0,0.2);}
-    .video img { width: 100%; }
-    .video-title { padding: 10px; text-align: center; font-weight: bold; font-size: 1rem; }
-    
-    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9rem; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -40,6 +20,14 @@
   <p>"Explore NPTEL Course Answers, Preparation Strategies, Previous Year Assignments, Educational Resources, Internships, and Job Opportunities — Click a Video to Start Learning on YouTube!"</p>
   <a class="subscribe-button" href="http://www.youtube.com/@StudyWithPradipta950?sub_confirmation=1" target="_blank">Subscribe on YouTube</a>
 </section>
+
+<div class="videos">
+  <h1> Previous Year Assignments </h1>
+</div>
+<div class="assignments-button">
+  <div><button onclick="openCard()">Programming in Java</button></div>
+  <div><button>Cloud Computing</button></div>
+</div>
 
 <section class="playlists">
   <a href="https://www.youtube.com/@StudyWithPradipta950/playlists" target="_blank">
@@ -171,6 +159,18 @@
   <p>Contact with us: <a href="mailto:pradipta.you.24@gmail.com" style="color: #4CAF50; text-decoration: none;">pradipta.you.24@gmail.com</a></p>
   <p>&copy; 2025 StudyWithPradipta. All rights reserved.</p>
 </footer>
+
+<!-- Flying Card -->
+<div id="infoCard" class="info-card">
+  <span class="close-btn" onclick="closeCard()">✖</span>
+  <h2>Programming in Java</h2>
+  <p>
+    Here you will find previous year assignments, solutions,
+    preparation strategies, and important exam tips for NPTEL Java.
+  </p>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
