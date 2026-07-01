@@ -9,6 +9,21 @@
 </head>
 <body>
 
+  <nav class="navbar">
+    <div class="nav-links">
+        <a href="#assignments">Assignments Q & A</a>
+        <a href="#playlists">Playlists</a>
+        <a href="#videos">Videos</a>
+    </div>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search videos, playlists...">
+    </div>
+  </nav>  
+
 <header>
   <img src="image.png" alt="imageswp">
   <h1>StudyWithPradipta</h1>
@@ -21,7 +36,7 @@
   <a class="subscribe-button" href="http://www.youtube.com/@StudyWithPradipta950?sub_confirmation=1" target="_blank">Subscribe on YouTube</a>
 </section>
 
-<div class="videos">
+<div id="assignments" class="videos">
   <h1> Previous Year Assignments </h1>
 </div>
 <div class="assignments-button">
@@ -31,130 +46,18 @@
   <div><button onclick="openCardInternetOfThings()" class="cobtn">Internet Of Things</button></div>
 </div>
 
-<section class="playlists">
+<section id="playlists" class="playlists">
   <a href="https://www.youtube.com/@StudyWithPradipta950/playlists" target="_blank">
     <h2 style="text-align: center; margin-top: 40px;">📚 Explore My Playlists</h2>
   </a>
-  <div class="videos">
-    <div class="video">
-      <a href="https://www.youtube.com/playlist?list=PLqRJbI_zl_SjlpaeUbpUNGGmJewt3Es-i" target="_blank">
-        <img src="https://img.youtube.com/vi/kQkcXhME1co/maxresdefault.jpg" alt="Playlist 1">
-      </a>
-      <div class="video-title"><b>Database Management System (DBMS) Jan 2025</b></div>
-    </div>
-    
-    <div class="video">
-      <a href="https://www.youtube.com/playlist?list=PLqRJbI_zl_Sgkq4Fo2mPPlnZgB47c5Kdk" target="_blank">
-        <img src="https://img.youtube.com/vi/Y7Kc6fhZj8k/maxresdefault.jpg" alt="Playlist 2">
-      </a>
-      <div class="video-title"><b>Introduction to machine learning assignment answers Jan 2025</b></div>
-    </div>
-
-    <div class="video">
-      <a href="https://www.youtube.com/playlist?list=PLqRJbI_zl_SiRNe96gX6NTLBM9SkjxpQf" target="_blank">
-        <img src="https://img.youtube.com/vi/Kz82OgjKWjo/maxresdefault.jpg" alt="Playlist 2">
-      </a>
-      <div class="video-title"><b>Cloud Computing Jan 2025 Assignment Answers</b></div>
-    </div>
-
-    <div class="video">
-      <a href="https://www.youtube.com/playlist?list=PLqRJbI_zl_Sh0n6stcgWG2lOHcwpxu4do" target="_blank">
-        <img src="https://img.youtube.com/vi/SUtkfqDa0q8/maxresdefault.jpg" alt="Playlist 2">
-      </a>
-      <div class="video-title"><b>Programming in Java Jan 2025 Assignment Answers</b></div>
-    </div>
-
-    <!-- Add more playlists here by copying the div above -->
-  </div>
-  <h2 style="text-align: center; margin-top: 40px;">📹 Explore My Videos</h2>
+  <!--This is for playlist-->
+  <div class="videos" id="playlistContainer"></div>
+  
+  <h2 style="text-align: center; margin-top: 40px;" id="videos">📹 Explore My Videos</h2>
 </section>
 
-<section class="videos">
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=Da50AGESxYY" target="_blank">
-      <img src="https://img.youtube.com/vi/Da50AGESxYY/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>FREE AICTE Online Internship 2025 for ALL students | With Certificate | Shell x Edunet AI Internship</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=FyhFVtb9-1Y" target="_blank">
-      <img src="https://img.youtube.com/vi/FyhFVtb9-1Y/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>Week 0 Assignment | Introduction to Internet of Things NPTEL | All Answers Explained | IoT July 2025</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=31jslPcUPsE" target="_blank">
-      <img src="https://img.youtube.com/vi/31jslPcUPsE/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>Programming in Java week 0 assignment 0 Answers Solutions nptel assignment 0 | July 2025</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=DS_Yy7bk8pc" target="_blank">
-      <img src="https://img.youtube.com/vi/DS_Yy7bk8pc/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>FREE Microsoft Online Internship 2025 for ALL students | With Certificate | AICTE approved</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=imyQYtSZ-po" target="_blank">
-      <img src="https://img.youtube.com/vi/imyQYtSZ-po/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>FREE IBM Online Internship 2025 for ALL students | With Certificate | AICTE approved | 3rd July 2025</b></div>
-  </div>
-  
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=HGgz8lwlhiM" target="_blank">
-      <img src="https://img.youtube.com/vi/HGgz8lwlhiM/maxresdefault.jpg" alt="Video 1">
-    </a>
-    <div class="video-title"><b>How to Prepare for Programming in Java NPTEL Exam (Proctored Exam) 2025 | May 4 2025</b></div>
-  </div>
-  
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=Y7Kc6fhZj8k" target="_blank">
-      <img src="https://img.youtube.com/vi/Y7Kc6fhZj8k/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>Machine Learning NPTEL Exam Preparation 2025 | How to Prepare for Introduction to Machine Learning</b></div>
-  </div>
-  
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=CB0MdrXVdEc" target="_blank">
-      <img src="https://img.youtube.com/vi/CB0MdrXVdEc/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>NPTEL Cloud Computing Week 12 Assignment Answers | Jan 2025 #cloudcomputing #week12 #swayam</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=BPFIAm3u3W8" target="_blank">
-      <img src="https://img.youtube.com/vi/BPFIAm3u3W8/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>Introduction to Machine Learning Week 12 Assignment 12 answer solution Jan 2025 NPTEL Swayam</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=BZm8-JxaV8E" target="_blank">
-      <img src="https://img.youtube.com/vi/BZm8-JxaV8E/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>NPTEL Introduction to IoT (Internet of Things) Week 12 Assignment 12 Quiz Answers | 2025 Jan</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=cKs-BNYDS5A" target="_blank">
-      <img src="https://img.youtube.com/vi/cKs-BNYDS5A/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>NPTEL EV Week 8 Assignment 8 Answers 2025 | EV Vehicle Dynamics and Electric Motor Drives Quiz 8</b></div>
-  </div>
-
-  <div class="video">
-    <a href="https://www.youtube.com/watch?v=dSpUnJ3U8co" target="_blank">
-      <img src="https://img.youtube.com/vi/dSpUnJ3U8co/maxresdefault.jpg" alt="Video 2">
-    </a>
-    <div class="video-title"><b>Programming Data Structures And Algorithms Using Python week 4 nptel Quiz answers DSA 2025</b></div>
-  </div>
-
-  <!-- Add more videos here by copying the div above -->
+<!--This section is for video -- go to js to see-->
+<section class="videos" id="videoContainer">
 </section>
 
 <footer>
@@ -170,26 +73,29 @@
     👉2024 (Jan-Apr) assignments: <b>₹15</b><br>
     👉2024 (July-Nov) assignments: <b>₹15</b><br>
     👉2025 (Jan-Apr) assignments: <b>₹15</b><br>
-    👉2025 (July-Nov) assignments: <b>₹15</b><br><br>
+    👉2025 (July-Nov) assignments: <b>₹15</b><br>
+    👉2026 (Jan-Apr) assignments: <b>₹15</b><br><br>
     If You want all the assignments then you will get<br>
     discount of Rs. <b>₹30</b> and you have to pay <br><br>
     <b class="finalprice">₹30</b><br><br>
     🆓🆓Extra : 2022 jan session for free<br><br>
-    <b>If you are interested mail me at:</b><br>
-    <a href="mailto:pradipta.you.24@gmail.com"><h4 class="mail">pradipta.you.24@gmail.com</h4></a>
+    <b>If you want this you have to fill the google form</b>
+    <a href="https://forms.gle/NjxicGmA4CGzN5kQA" target="_blank"><h4 class="mail">Form</h4></a>
 </div>
 
+<!--Cloud Computing-->
 <div id="infoCardcloudcomputing" class="info-card">
   <span class="close-btn" onclick="closeCard()">✖</span>
     <h2>Cloud Computing</h2>
     Drive Link for assignments with answers.<br><br>
     👉2025 (Jan-Apr) assignments: <b>₹15</b><br>
     👉2025 (July-Nov) assignments: <b>₹15</b><br>
+    👉2026 (Jan-Apr) assignments: <b>₹15</b><br>
     If You want all the assignments then you will get<br>
-    discount of Rs. <b>₹10</b> and you have to pay <br><br>
-    <b class="finalprice">₹20</b><br><br>
-    <b>If you are interested mail me at:</b><br>
-    <a href="mailto:pradipta.you.24@gmail.com"><h4 class="mail">pradipta.you.24@gmail.com</h4></a>
+    discount of Rs. <b>₹20</b> and you have to pay <br><br>
+    <b class="finalprice">₹25</b><br><br>
+    <b>If you want this you have to fill the google form</b><br>
+    <a href="https://forms.gle/NjxicGmA4CGzN5kQA" target="_blank"><h4 class="mail">Form</h4></a>
 </div>
 
 <!--Machine Leaning-->
@@ -197,14 +103,13 @@
   <span class="close-btn" onclick="closeCard()">✖</span>
     <h2>Machine Learning</h2>
     Drive Link for assignments with answers.<br><br>
-    👉2024 (July-Nov) assignments: <b>₹15</b><br>
-    👉2025 (Jan-Apr) assignments: <b>₹15</b><br>
-    👉2025 (July-Nov) assignments: <b>Same as 2024(July)</b><br><br>
-    If You want all the assignments then you will get<br>
-    discount of Rs. <b>₹10</b> and you have to pay <br><br>
+    👉2024 (July-Nov) assignments: <b>₹10</b><br>
+    👉2025 (Jan-Apr) assignments: <b>₹10</b><br>
+    👉2025 (July-Nov) assignments: <b>Same as 2024(July)</b><br>
+    👉2026 (Jan-Apr) assignments: <b>₹10</b><br><br>
     <b class="finalprice">₹20</b><br><br>
-    <b>If you are interested mail me at:</b><br>
-    <a href="mailto:pradipta.you.24@gmail.com"><h4 class="mail">pradipta.you.24@gmail.com</h4></a>
+    <b>If you want this you have to fill the google form</b><br>
+    <a href="https://forms.gle/NjxicGmA4CGzN5kQA" target="_blank"><h4 class="mail">Form</h4></a>
 </div>
 
 <!--Internet of Things-->
@@ -213,14 +118,14 @@
     <h2>Internet Of Things</h2>
     Drive Link for assignments with answers.<br><br>
     👉2025 (Jan-Apr) assignments: <b>₹15</b><br>
-    👉2025 (July-Nov) assignments: <b>₹15</b><br><br>
+    👉2025 (July-Nov) assignments: <b>₹15</b><br>
+    👉2026 (Jan-Apr) assignments: <b>₹15</b><br><br>
     If You want all the assignments then you will get<br>
-    discount of Rs. <b>₹10</b> and you have to pay <br><br>
-    <b class="finalprice">₹20</b><br><br>
-    <b>If you are interested mail me at:</b><br>
-    <a href="mailto:pradipta.you.24@gmail.com"><h4 class="mail">pradipta.you.24@gmail.com</h4></a>
+    discount of Rs. <b>₹20</b> and you have to pay <br><br>
+    <b class="finalprice">₹25</b><br><br>
+    <b>If you want this you have to fill the google form</b><br>
+    <a href="https://forms.gle/NjxicGmA4CGzN5kQA" target="_blank"><h4 class="mail">Form</h4></a>
 </div>
-
 
 <script src="script.js"></script>
 
