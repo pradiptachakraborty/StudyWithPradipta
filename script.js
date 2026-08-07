@@ -1,4 +1,5 @@
 function openCard() {
+  closeCard();
   document.getElementById("infoCard").classList.add("active");
 }
 
@@ -10,19 +11,27 @@ function closeCard() {
 }
 
 function openCardCloudComputing() {
+  closeCard();
   document.getElementById("infoCardcloudcomputing").classList.add("active");
 }
 
 function openCardMachineLearning(){
+  closeCard();
   document.getElementById("infoCardMachineLearning").classList.add("active");
 }
 
 function openCardInternetOfThings(){
+  closeCard();
   document.getElementById("infoCardInternetOfThings").classList.add("active");
 }
 
 const playlists = [
   //Add new Playlist here
+  {
+        id: "PLY_Tm8wxSnLE",
+        thumbnail: "UjcE81DvhWc0bFu8",
+        title: "Programming in Java July - Nov 2026 NPTEL Assignment Answers"
+  },
   {
         id: "PLqRJbI_zl_Shy_ALn9WxwDTFsDOpSQp-T",
         thumbnail: "OgbtrfKBZ98",
