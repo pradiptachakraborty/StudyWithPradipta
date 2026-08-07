@@ -33,6 +33,21 @@ const playlists = [
         title: "Programming in Java July - Nov 2026 NPTEL Assignment Answers"
   },
   {
+        id: "PLqRJbI_zl_SgYA7QK3oKbY8zADrhM7aPt",
+        thumbnail: "oMbdvQFxZ7w",
+        title: "DBMS NPTEL July-Nov 2026 Assignment Answers"
+  },
+  {
+        id: "PLBI3ssHC4qVE",
+        thumbnail: "jZb3fsNCDiE",
+        title: "Introduction to Machine Learning Numericals Questions"
+  },
+  {
+        id: "PLN52t0P3dmh8",
+        thumbnail: "_1qszf4-Dmg",
+        title: "Cloud Computing Assignment Questions and Answers NPTEL July-Nov 2026"
+  },
+  {
         id: "PLqRJbI_zl_Shy_ALn9WxwDTFsDOpSQp-T",
         thumbnail: "OgbtrfKBZ98",
         title: "Programming in Java Jan 2026 Assignment & Programming Assignment Answers"
