@@ -29,7 +29,7 @@ const playlists = [
   //Add new Playlist here
   {
         id: "PLY_Tm8wxSnLE",
-        thumbnail: "UjcE81DvhWc0bFu8",
+        thumbnail: "MCPC4XZCXH4",
         title: "Programming in Java July - Nov 2026 NPTEL Assignment Answers"
   },
   {
