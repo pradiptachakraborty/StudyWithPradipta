@@ -277,3 +277,87 @@ html{
 section[id] {
     scroll-margin-top: 90px;
 }
+
+/* ==========================================
+   MOBILE RESPONSIVE STYLES (Max width: 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    
+    /* 1. Header & Navigation Adjustments */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 12px 15px;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-box input {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 25%; /* Expanded image size for mobile readability */
+        height: auto;
+    }
+
+    /* 2. Responsive Grid for Cards & Video Layouts */
+    .videos {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .video {
+        width: 100%; /* Full width cards on small screens */
+        max-width: 340px;
+    }
+
+    /* 3. Action Buttons & Form Elements */
+    .assignments-button {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cobtn {
+        width: 90%;
+        max-width: 300px;
+        padding: 16px 20px; /* Reduced from 50px padding to fit screens */
+        font-size: 15px;
+    }
+
+    /* 4. Pop-up Flying Card Dimensions */
+    .info-card {
+        width: 85%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    /* 5. Touch Support for Dropdown Menu */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        background-color: #f9f9f9;
+    }
+}
