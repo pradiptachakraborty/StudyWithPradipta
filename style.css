@@ -231,3 +231,49 @@ html{
 .search-box input:focus{
     box-shadow:0 0 8px rgba(71,3,128,.3);
 }
+
+/* Dropdown Navigation Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid #4a5d23; /* Matching border color from diagram */
+    border-radius: 4px;
+    z-index: 10000;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f3f3;
+    color: #470380;
+}
+
+/* Reveal menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Smooth Scrolling Offset for Fixed Navbar */
+section[id] {
+    scroll-margin-top: 90px;
+}
