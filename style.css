@@ -249,6 +249,7 @@ html{
     border: 1px solid #4a5d23; /* Matching border color from diagram */
     border-radius: 4px;
     z-index: 10000;
+    overflow: hidden;
 }
 
 .dropdown-menu a {
@@ -257,6 +258,7 @@ html{
     text-decoration: none;
     display: block;
     border-bottom: 1px solid #eee;
+    text-align: center;
 }
 
 .dropdown-menu a:last-child {
@@ -269,7 +271,8 @@ html{
 }
 
 /* Reveal menu on hover */
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+.dropdown.open .dropdown-menu {
     display: block;
 }
 
@@ -282,29 +285,43 @@ section[id] {
    MOBILE RESPONSIVE STYLES (Max width: 768px)
    ========================================== */
 @media (max-width: 768px) {
-    
-    /* 1. Header & Navigation Adjustments */
+
     .navbar {
         flex-direction: column;
         gap: 15px;
-        padding: 12px 15px;
+        padding: 15px;
     }
 
     .nav-links {
         margin-left: 0;
-        gap: 20px;
+        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .search-box input {
         width: 100%;
-        max-width: 280px;
-        box-sizing: border-box;
     }
 
-    header {
-        padding: 20px 10px;
+    /* Mobile Dropdown Adjustments */
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static; /* Stack directly inside mobile menu */
+        transform: none;
+        width: 90%;
+        max-width: 250px;
+        margin-top: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        border: 1px solid #e0e0e0;
+        background-color: #fafafa;
+    }
+
+    .dropdown-menu a {
+        padding: 10px 14px;
+        font-size: 0.95rem;
     }
 
     header h1 {
@@ -315,49 +332,23 @@ section[id] {
         font-size: 1rem;
     }
 
-    header img {
-        width: 25%; /* Expanded image size for mobile readability */
-        height: auto;
-    }
-
-    /* 2. Responsive Grid for Cards & Video Layouts */
     .videos {
         padding: 20px 10px;
-        gap: 15px;
     }
 
     .video {
-        width: 100%; /* Full width cards on small screens */
-        max-width: 340px;
-    }
-
-    /* 3. Action Buttons & Form Elements */
-    .assignments-button {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        width: 100%;
+        max-width: 320px;
     }
 
     .cobtn {
         width: 90%;
         max-width: 300px;
-        padding: 16px 20px; /* Reduced from 50px padding to fit screens */
-        font-size: 15px;
+        padding: 14px 20px;
     }
 
-    /* 4. Pop-up Flying Card Dimensions */
     .info-card {
         width: 85%;
         max-width: 320px;
-        box-sizing: border-box;
-    }
-
-    /* 5. Touch Support for Dropdown Menu */
-    .dropdown-menu {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        border: none;
-        background-color: #f9f9f9;
     }
 }
