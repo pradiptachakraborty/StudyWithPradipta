@@ -33,6 +33,10 @@ const lwcVideos = [
 
 const dataCloudVideos = [
   // Add Data Cloud items here
+    {
+        id: "xZVYLbQwNO4",
+        title: "How to connect Salesforce Data cloud Org with Snowflake with Zero Copy Architecture in 2026"
+    }
 ];
 
 // Helper function to render cards into target containers
