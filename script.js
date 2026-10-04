@@ -8,6 +8,7 @@ function closeCard() {
   document.getElementById("infoCardcloudcomputing").classList.remove("active");
   document.getElementById("infoCardMachineLearning").classList.remove("active");
   document.getElementById("infoCardInternetOfThings").classList.remove("active");
+  document.getElementById("infoCardDSAUsingJava").classList.remove("active");
 }
 
 function openCardCloudComputing() {
@@ -23,6 +24,11 @@ function openCardMachineLearning(){
 function openCardInternetOfThings(){
   closeCard();
   document.getElementById("infoCardInternetOfThings").classList.add("active");
+}
+
+function openCardDSAUsingJava(){
+  closeCard();
+  document.getElementById("infoCardDSAUsingJava").classList.add("active");
 }
 
 const playlists = [
